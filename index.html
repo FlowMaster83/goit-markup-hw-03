@@ -14,30 +14,32 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a class="logo-web" href="./index.html">Web<span>Studio</span></a>
-        <ul>
+    <div class="flex-for-header">
+      <header>
+        <nav>
+          <a class="logo-web" href="./index.html">Web<span>Studio</span></a>
+          <ul class="flex-for-nav">
+            <li>
+              <a class="header-nav current" href="#">Студія</a>
+            </li>
+            <li>
+              <a class="header-nav" href="portfolio.html">Портфоліо</a>
+            </li>
+            <li>
+              <a class="header-nav" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="flex-for-contact-to">
           <li>
-            <a class="header-nav current" href="#">Студія</a>
+            <a href="tel:+380961111111" class="contact-to">+38 096 111 11 11</a>
           </li>
           <li>
-            <a class="header-nav" href="portfolio.html">Портфоліо</a>
-          </li>
-          <li>
-            <a class="header-nav" href="#">Контакти</a>
+            <a href="mailto:info@devstudio.com" class="contact-to">info@devstudio.com</a>
           </li>
         </ul>
-      </nav>
-      <ul>
-        <li>
-          <a href="tel:+380961111111" class="contact-to">+38 096 111 11 11</a>
-        </li>
-        <li>
-          <a href="mailto:info@devstudio.com" class="contact-to">info@devstudio.com</a>
-        </li>
-      </ul>
-    </header>
+      </header>
+    </div>
 
     <main>
       <section class="section-solutions">
@@ -46,7 +48,7 @@
       </section>
       <section class="sections-benefits">
         <h2>Наші переваги</h2>
-        <ul>
+        <ul class="benefits-list">
           <li>
             <h3 class="benefits">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="benefits-descrition">
@@ -77,7 +79,7 @@
       <section>
         <h2 class="activities-caption">Чим ми займаємось</h2>
 
-        <ul>
+        <ul class="activities-list">
           <li>
             <img src="./img/img1.jpg" alt="hands on keyboard" width="370" height="294" />
           </li>
@@ -90,39 +92,40 @@
         </ul>
       </section>
 
-      <section class="section-team">
-        <h2 class="team-main-caption">Наша команда</h2>
-        <ul>
-          <li class="team-members">
-            <img src="./img/Demyanenko-1.jpg" alt="Demyanenko" width="270" height="260" />
-            <h3 class="name-member-team">Ігор Дем'яненко</h3>
-            <p class="position-member-team">Product Designer</p>
-          </li>
+      <div>
+        <section class="section-team">
+          <h2 class="team-main-caption">Наша команда</h2>
+          <ul class="team-list">
+            <li class="team-members">
+              <img src="./img/Demyanenko-1.jpg" alt="Demyanenko" width="270" height="260" />
+              <h3 class="name-member-team">Ігор Дем'яненко</h3>
+              <p class="position-member-team">Product Designer</p>
+            </li>
 
-          <li class="team-members">
-            <img src="./img/Repina-2.jpg" alt="Repina" width="270" height="260" />
-            <h3 class="name-member-team">Ольга Рєпіна</h3>
-            <p class="position-member-team">Frontend Developer</p>
-          </li>
+            <li class="team-members">
+              <img src="./img/Repina-2.jpg" alt="Repina" width="270" height="260" />
+              <h3 class="name-member-team">Ольга Рєпіна</h3>
+              <p class="position-member-team">Frontend Developer</p>
+            </li>
 
-          <li class="team-members">
-            <img src="./img/Tarasov-3.jpg" alt="Tarasov" width="270" height="260" />
-            <h3 class="name-member-team">Микола Тарасов</h3>
-            <p class="position-member-team">Marketing</p>
-          </li>
+            <li class="team-members">
+              <img src="./img/Tarasov-3.jpg" alt="Tarasov" width="270" height="260" />
+              <h3 class="name-member-team">Микола Тарасов</h3>
+              <p class="position-member-team">Marketing</p>
+            </li>
 
-          <li class="team-members">
-            <img src="./img/Yermakov-4.jpg" alt="Yermakov" width="270" height="260" />
-            <h3 class="name-member-team"Михайло Єрмаков</h3>
-            <p class="position-member-team">UI Designer</p>
-          </li>
-        </ul>
-      </section>
+            <li class="team-members">
+              <img src="./img/Yermakov-4.jpg" alt="Yermakov" width="270" height="260" />
+              <h3 class="name-member-team">Михайло Єрмаков</h3>
+              <p class="position-member-team">UI Designer</p>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
 
-    <footer class="background-footer">
+    <footer class="background-footer container">
       <a class="logo-web" href="./index.html">Web<span class="logo-studio-footer">Studio</span></a>
-
       <address>
         <ul>
           <li>
