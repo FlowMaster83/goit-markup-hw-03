@@ -15,6 +15,9 @@
 
 
 /* для обох сторінок */
+h1, h2, h3, ul, p {
+    margin: 0;
+}
 
 li {
     list-style: none;
@@ -22,6 +25,8 @@ li {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 button {
@@ -38,16 +43,32 @@ body {
     background-color: #ffffff;
 }
 
-.container {
-    display: flex;
-    margin-left: 0;
-    margin-right: 0;
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container:not(:first-child) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 /* логотип */
 
-.logo-web {
+.logo-web-header {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    align-items: center;
+    margin-right: 93px; 
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -65,6 +86,19 @@ span {
     text-decoration: none;
 }
 
+.logo-web-footer {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--blue);
+    text-decoration: none;
+}
+
 .logo-studio-footer {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -79,13 +113,28 @@ span {
 
 .flex-for-header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ececec;
 }
 
 .flex-for-nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.list-nav:not(:last-child) {
+    margin-right: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-nav {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -107,10 +156,20 @@ span {
 
 .flex-for-contact-to {
     display: flex;
+    padding: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-list:not(:first-child) {
+    align-items: center;
+    margin-left: 50px;
 }
 
 .contact-to {
     font-weight: 500;
+    padding-top: 30px;
+    padding-bottom: 30px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--grey);
@@ -127,9 +186,12 @@ span {
 
 .background-footer {
     background: var(--background);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-address {
+    padding-bottom: 9px;
     font-style: normal;
     line-height: 1.71;
     color: var(--white);
@@ -143,17 +205,26 @@ span {
     text-decoration: none;
 }
 
+.footer-mail.tel:first-child {
+    padding-bottom: 9px;
+}
+
 
 /* ГОЛОВНА */
 
 /* Ефективні рішення для вашого бізнесу */
 
 .section-solutions {
+    align-items: center;
+    text-align: center;
     color: var(--white-not-transparent);
     background-color: var(--background);
 }
 
 .solutions-main-caption {
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -166,14 +237,13 @@ span {
 /* Кнопка "Замовити послугу" */
 
 .modal-button {
-    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 200px;
+    letter-spacing: 0.06em;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
     color: var(--white);
     background-color: var(--blue-for-modal-button);
     cursor: pointer;
@@ -187,14 +257,31 @@ span {
 
 /* Переваги */
 
-.benefits-list {
+.benefits-caption {
+    display: flex;
+    justify-content: center;
+}
+
+.sections-benefits {
     display: flex;
 }
+
+.benefits-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .benefits {
+    margin-bottom: 10px;
+    justify-content: center;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
     color: inherit;
+}
+
+.benefits-points:not(:last-child) {
+    margin-right: 30px;
 }
 
 .benefits-descrition {
@@ -205,10 +292,12 @@ span {
 
 /* Чим ми займаємось */
 
-.activities-list {
-    display: flex;
+.activites {
+    background: var(--white);
 }
+
 .activities-caption {
+    margin-top: 94px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.71;
@@ -216,22 +305,25 @@ span {
     color: inherit;
 }
 
+.activities-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activities-points:not(:last-child) {
+    margin-right: 30px;
+}
 
 /* Наша команда */
-
-.team-list {
-    display: flex;
-}
 
 .section-team {
     background: var(--background-for-section-team)
 }
 
-.team-members {
-    background-color: var(--white);
-}
-
 .team-main-caption {
+    padding-top: 94px;
+    padding-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -239,7 +331,29 @@ span {
     color: inherit;
 }
 
+.team-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-members {
+    background-color: var(--white);
+    margin-bottom: 94px;
+}
+
+.team-members:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-layout {
+    padding-top: 30px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
 .name-member-team {
+    padding-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.16;
@@ -248,6 +362,7 @@ span {
 }
 
 .position-member-team {
+    padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -261,11 +376,19 @@ span {
 
 .flex-for-all-buttons {
     display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
 
+.button-list:not(:last-child) {
+    margin-right: 8px;
+}
+
 .all-buttons {
+    padding: 6px 22px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -273,6 +396,10 @@ span {
     color: inherit;
     background-color: var(--white-for-background-buttons);
     cursor: pointer;
+}
+
+.all-buttons:not(last-child) {
+    margin-right: 8px;
 }
 
 .all-buttons:hover,
@@ -283,6 +410,11 @@ span {
 
 
 /* Проекти */
+
+.caption-our-projects {
+    display: flex;
+    justify-content: center;
+}
 
 .flex-for-projects {
     display: flex;
@@ -295,9 +427,25 @@ span {
 
 .projects-list {
     background-color: var(--white-not-transparent);
+    margin-bottom: 30px;
+}
+
+.projects-list:not(:nth-child(3n+3)) {
+    margin-right: 30px;
+}
+
+.borders-for-projects {
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .projects-caption {
+    padding-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
