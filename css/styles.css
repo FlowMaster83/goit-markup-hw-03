@@ -17,6 +17,7 @@
 /* для обох сторінок */
 h1, h2, h3, p {
     margin: 0;
+    padding: 0;
 }
 
 li {
@@ -51,13 +52,13 @@ ul, ol {
 
 .section {
     padding: 94px 0;
-
 }
 
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 94px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -89,8 +90,7 @@ span {
 
 .logo-web-footer {
     display: flex;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     align-items: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -113,6 +113,7 @@ span {
 /* Навігація хедера */
 
 .flex-for-header {
+    padding-top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -157,7 +158,6 @@ span {
 
 .flex-for-contact-to {
     display: flex;
-    padding: 0px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -168,6 +168,7 @@ span {
 }
 
 .contact-to {
+    margin-left: auto;
     font-weight: 500;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -187,12 +188,11 @@ span {
 
 .background-footer {
     background: var(--background);
-    padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .footer-address {
-    padding-bottom: 9px;
+    margin-bottom: 9px;
     font-style: normal;
     line-height: 1.71;
     color: var(--white);
@@ -206,8 +206,8 @@ span {
     text-decoration: none;
 }
 
-.footer-mail.tel:first-child {
-    padding-bottom: 9px;
+.footer-mail-tel:first-child {
+    margin-bottom: 9px;
 }
 
 
@@ -216,6 +216,7 @@ span {
 /* Ефективні рішення для вашого бізнесу */
 
 .section-solutions {
+    padding: 0;
     align-items: center;
     text-align: center;
     color: var(--white-not-transparent);
@@ -223,9 +224,11 @@ span {
 }
 
 .solutions-main-caption {
+    justify-content: center;
     align-items: center;
-    margin-top: 200px;
     margin-bottom: 30px;
+    margin-top: auto;
+    padding-top: 200px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -261,16 +264,18 @@ span {
 .benefits-caption {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .sections-benefits {
     display: flex;
+    flex-basis: ((100% - 90px) / 4);
 }
 
 .benefits-list {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 .benefits {
     margin-bottom: 10px;
@@ -285,6 +290,7 @@ span {
     margin-right: 30px;
 }
 
+
 .benefits-descrition {
     line-height: 1.71;
     color: var(--grey);
@@ -298,7 +304,7 @@ span {
 }
 
 .activities-caption {
-    margin-top: 94px;
+    padding-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.71;
@@ -310,10 +316,11 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    }
 
 .activities-points:not(:last-child) {
     margin-right: 30px;
+    flex-basis: ((100% - 60px) / 3);
 }
 
 /* Наша команда */
@@ -341,6 +348,7 @@ span {
 .team-members {
     background-color: var(--white);
     margin-bottom: 94px;
+    flex-basis: ((100% - 90px) / 4);
 }
 
 .team-members:not(:last-child) {
@@ -348,13 +356,13 @@ span {
 }
 
 .team-layout {
-    padding-top: 30px;
-    padding-left: auto;
-    padding-right: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .name-member-team {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.16;
@@ -363,7 +371,7 @@ span {
 }
 
 .position-member-team {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -375,16 +383,21 @@ span {
 
 /* Кнопки */
 
-.flex-for-all-buttons {
+.our-projects {
+    justify-content: center;
+    align-items: center;
+}
+
+.button-list {
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-top: auto;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-.button-list:not(:last-child) {
+.all-buttons:not(:last-child) {
     margin-right: 8px;
 }
 
@@ -399,10 +412,6 @@ span {
     cursor: pointer;
 }
 
-.all-buttons:not(last-child) {
-    margin-right: 8px;
-}
-
 .all-buttons:hover,
 .all-buttons:focus {
     background-color: var(--accent-color);
@@ -412,17 +421,12 @@ span {
 
 /* Проекти */
 
-.caption-our-projects {
-    display: flex;
-    justify-content: center;
-}
-
 .flex-for-projects {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    flex-basis: ((100% - 60px) / 3);
-}
+    }
 
 .projects-link {
     text-decoration: none;
@@ -431,9 +435,10 @@ span {
 .projects-list {
     background-color: var(--white-not-transparent);
     margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-basis: ((100% - 60px) / 3);
 }
-
-
 
 .borders-for-projects {
     border-left: 1px solid #ececec;
@@ -446,7 +451,7 @@ span {
 }
 
 .projects-caption {
-    padding-bottom: 4px;
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
