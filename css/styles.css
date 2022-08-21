@@ -15,7 +15,7 @@
 
 
 /* для обох сторінок */
-h1, h2, h3, ul, p {
+h1, h2, h3, p {
     margin: 0;
 }
 
@@ -43,22 +43,23 @@ body {
     background-color: #ffffff;
 }
 
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 0;
+
 }
 
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-}
-
-.container:not(:first-child) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* логотип */
@@ -419,6 +420,8 @@ span {
 .flex-for-projects {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
+    flex-basis: ((100% - 60px) / 3);
 }
 
 .projects-link {
@@ -430,9 +433,7 @@ span {
     margin-bottom: 30px;
 }
 
-.projects-list:not(:nth-child(3n+3)) {
-    margin-right: 30px;
-}
+
 
 .borders-for-projects {
     border-left: 1px solid #ececec;
