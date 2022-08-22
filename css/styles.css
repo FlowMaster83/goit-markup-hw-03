@@ -58,7 +58,6 @@ ul, ol {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 94px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -89,7 +88,6 @@ span {
 }
 
 .logo-web-footer {
-    display: flex;
     margin-bottom: 20px;
     align-items: center;
     font-family: 'Raleway', sans-serif;
@@ -112,12 +110,14 @@ span {
 
 /* Навігація хедера */
 
+.header-styles {
+border-bottom: 1px solid #ececec;
+}
+
 .flex-for-header {
     padding-top: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ececec;
 }
 
 .flex-for-nav {
@@ -158,8 +158,7 @@ span {
 
 .flex-for-contact-to {
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-left: auto;
 }
 
 .contact-list:not(:first-child) {
@@ -168,10 +167,12 @@ span {
 }
 
 .contact-to {
+    margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: auto;
     font-weight: 500;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--grey);
@@ -188,6 +189,7 @@ span {
 
 .background-footer {
     background: var(--background);
+    padding-bottom: 60px;
     padding-bottom: 60px;
 }
 
@@ -210,25 +212,29 @@ span {
     margin-bottom: 9px;
 }
 
+.address-list:not(:last-child) {
+    margin-bottom: 9px;
+}
 
 /* ГОЛОВНА */
 
 /* Ефективні рішення для вашого бізнесу */
 
-.section-solutions {
-    padding: 0;
-    align-items: center;
+.hero {
     text-align: center;
     color: var(--white-not-transparent);
     background-color: var(--background);
+    padding: 200px 0;
 }
 
 .solutions-main-caption {
+    width: 696px;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
     margin-top: auto;
-    padding-top: 200px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -243,7 +249,6 @@ span {
 .modal-button {
     align-items: center;
     text-align: center;
-    margin-bottom: 200px;
     letter-spacing: 0.06em;
     font-weight: 700;
     font-size: 16px;
@@ -265,11 +270,19 @@ span {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .sections-benefits {
-    display: flex;
-    flex-basis: ((100% - 90px) / 4);
 }
 
 .benefits-list {
@@ -281,6 +294,7 @@ span {
     margin-bottom: 10px;
     justify-content: center;
     font-weight: 700;
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: inherit;
@@ -304,6 +318,7 @@ span {
 }
 
 .activities-caption {
+    padding-top: 0;
     padding-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -320,7 +335,10 @@ span {
 
 .activities-points:not(:last-child) {
     margin-right: 30px;
-    flex-basis: ((100% - 60px) / 3);
+}
+
+.activities-points {
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 /* Наша команда */
@@ -330,8 +348,7 @@ span {
 }
 
 .team-main-caption {
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -347,8 +364,7 @@ span {
 
 .team-members {
     background-color: var(--white);
-    margin-bottom: 94px;
-    flex-basis: ((100% - 90px) / 4);
+    flex-basis: calc((100% - 90px) / 4);
 }
 
 .team-members:not(:last-child) {
@@ -386,6 +402,16 @@ span {
 .our-projects {
     justify-content: center;
     align-items: center;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .button-list {
@@ -423,7 +449,6 @@ span {
 
 .flex-for-projects {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
     }
@@ -437,7 +462,7 @@ span {
     margin-bottom: 30px;
     justify-content: center;
     align-items: center;
-    flex-basis: ((100% - 60px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .borders-for-projects {
