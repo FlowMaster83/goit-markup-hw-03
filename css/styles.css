@@ -256,6 +256,8 @@ border-bottom: 1px solid #ececec;
     color: var(--white);
     background-color: var(--blue-for-modal-button);
     cursor: pointer;
+    border: 0px;
+    border-radius: 4px;
 }
 
 .modal-button:hover,
@@ -436,7 +438,9 @@ border-bottom: 1px solid #ececec;
     color: inherit;
     background-color: var(--white-for-background-buttons);
     cursor: pointer;
-}
+    border: 0px;
+    border-radius: 4px;
+}   
 
 .all-buttons:hover,
 .all-buttons:focus {
